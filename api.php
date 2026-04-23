@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // ==============================
 $host = getenv('DB_HOST') ?: 'bg9hfpynwf2qu2o6nzzn-mysql.services.clever-cloud.com';
 $db   = getenv('DB_NAME') ?: 'bg9hfpynwf2qu2o6nzzn';
-$user = getenv('DB_USER') ?: '8uaFEoKlxOzEgD2IbgFu';
-$pass = getenv('DB_PASSWORD') ?: '';
+$user = getenv('DB_USER') ?: 'u6o4zp1tgdeb8h42';
+$pass = getenv('DB_PASSWORD') ?: '8uaFEoKlxOzEgD2IbgFu';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass, [
