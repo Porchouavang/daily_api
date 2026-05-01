@@ -12,10 +12,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // ==============================
 // Database Connection
 // ==============================
-$host = getenv('DB_HOST') ?: 'bcnwmnxodqnmfeynxlpi-mysql.services.clever-cloud.com';
-$db   = getenv('DB_NAME') ?: 'bcnwmnxodqnmfeynxlpi';
-$user = getenv('DB_USER') ?: 'u0ddxmv9ujlin1zm';
-$pass = getenv('DB_PASSWORD') ?: 'z2vBYwhqTTEfh1lXpnMQ';
+$host = getenv('DB_HOST') ?: 'bg9hfpynwf2qu2o6nzzn-mysql.services.clever-cloud.com';
+$db   = getenv('DB_NAME') ?: 'bg9hfpynwf2qu2o6nzzn';
+$user = getenv('DB_USER') ?: 'u6o4zp1tgdeb8h42';
+$pass = getenv('DB_PASSWORD') ?: '8uaFEoKlxOzEgD2IbgFu';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass, [
