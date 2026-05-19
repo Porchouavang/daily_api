@@ -304,12 +304,12 @@ if ($method === 'DELETE' && $resource === 'api' && str_starts_with($id ?? '', 'd
 // GET /api/daily (list)
 // ==============================
 if ($method === 'GET' && $resource === 'api' && ($id ?? '') === 'daily' && !isset($segments[3])) {
-    $stmt = $pdo->query("SELECT * FROM daily WHERE five_six IS NOT NULL ORDER BY timestamp DESC LIMIT 30");
+    $stmt = $pdo->query("SELECT * FROM daily WHERE five_six IS NOT NULL ORDER BY timestamp DESC");
     respond($stmt->fetchAll());
 }
 
 // ==============================
-// GET /api/daily/:i
+// GET /api/daily/:id
 // ==============================
 if ($method === 'GET' && $resource === 'api' && ($id ?? '') === 'daily' && isset($segments[3])) {
     $stmt = $pdo->prepare("SELECT * FROM daily WHERE id=?");
