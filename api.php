@@ -309,7 +309,7 @@ if ($method === 'GET' && $resource === 'api' && ($id ?? '') === 'daily' && !isse
 }
 
 // ==============================
-// GET /api/daily/:id
+// GET /api/daily/:i
 // ==============================
 if ($method === 'GET' && $resource === 'api' && ($id ?? '') === 'daily' && isset($segments[3])) {
     $stmt = $pdo->prepare("SELECT * FROM daily WHERE id=?");
